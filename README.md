@@ -14,9 +14,8 @@
 
 
 # Gif of Beta
-includes Taskkill 
-
-doesent work 100%
+!includes Taskkill 
+!doesent work 100%
 
 ![Alt Text](https://raw.githubusercontent.com/Pianonic/Windows-VBS-and-BAT-Thing/main/Screenshots/1.gif) 
 
