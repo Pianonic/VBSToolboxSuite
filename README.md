@@ -7,6 +7,8 @@
 2. fill in the other content
 3. have fun!
 
+Get the stable version [link]([https://somewebsite.ch](https://github.com/Pianonic/Windows-VBS-and-BAT-Thing/releases/tag/VBS))
+
 # Screenshots of Releases
 
 ![Alt Text](https://github.com/Pianonic/Windows-VBS-and-BAT-Thing/blob/main/Screenshots/1%20(1).png?raw=true)
