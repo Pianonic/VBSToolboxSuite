@@ -7,7 +7,7 @@
 2. fill in the other content
 3. have fun!
 
-Here is an example of one possibility
+**Here is an example of one possibility**
 
 ![Error](https://user-images.githubusercontent.com/79938743/183609552-a80d7ead-a441-4c40-bd8f-f8b4ae940b25.png) 
 
