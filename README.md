@@ -14,6 +14,7 @@
 
 
 # Gif of Beta
+includes Taskkill
 
 ![Alt Text](https://raw.githubusercontent.com/Pianonic/Windows-VBS-and-BAT-Thing/main/Screenshots/1.gif) 
 
