@@ -3,11 +3,12 @@
 
 # Screenshots
 
-**Tab1**
+![Alt Text](https://github.com/Pianonic/Windows-VBS-and-BAT-Thing/blob/main/Screenshots/1.png?raw=true) 
 
 ![Alt Text](https://github.com/Pianonic/Windows-VBS-and-BAT-Thing/blob/main/Screenshots/1.png?raw=true) 
 
-**Tab2**
-![Alt Text](https://github.com/Pianonic/Windows-VBS-and-BAT-Thing/blob/main/Screenshots/1.png?raw=true) 
+# Beta
+
+![Alt Text](https://raw.githubusercontent.com/Pianonic/Windows-VBS-and-BAT-Thing/main/Screenshots/1.gif) 
 
 *Made by PianoNic*
