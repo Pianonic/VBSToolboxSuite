@@ -17,7 +17,7 @@ Get the working version [here!](https://github.com/Pianonic/Windows-VBS-and-BAT-
 ![Alt Text](https://github.com/Pianonic/Windows-VBS-and-BAT-Thing/blob/main/Screenshots/2%20(1).png?raw=true) 
 
 
-# Gif of Beta
+# Beta which does not work
 includes Taskkill 
 
 doesent work 100%
