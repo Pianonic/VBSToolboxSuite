@@ -1,6 +1,6 @@
 # Windows-VBS-and-BAT-Thing
 
-*With this programme you can create files to prank your friends or read things to yourself!*
+*With this programme you can create files to prank your friends or let it read a text for you!*
 
 **How to use it?**
 1. write out a file name
