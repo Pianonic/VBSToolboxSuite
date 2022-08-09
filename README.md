@@ -1,5 +1,9 @@
 # Windows-VBS-and-BAT-Thing
-**Just open and have fun!**
+
+**How to use it?**
+1. write out a file name
+2. fill in the other content
+3. have fun!
 
 # Screenshots of Releases
 
