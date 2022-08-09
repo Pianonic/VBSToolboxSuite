@@ -11,10 +11,10 @@ Get the working version [here!](https://github.com/Pianonic/Windows-VBS-and-BAT-
 
 # Screenshots of Releases
 
-![Alt Text](https://github.com/Pianonic/Windows-VBS-and-BAT-Thing/blob/main/Screenshots/1%20(1).png?raw=true)
+![Picture of Tab1](https://github.com/Pianonic/Windows-VBS-and-BAT-Thing/blob/main/Screenshots/1%20(1).png?raw=true)
 
 
-![Alt Text](https://github.com/Pianonic/Windows-VBS-and-BAT-Thing/blob/main/Screenshots/2%20(1).png?raw=true) 
+![Picture of Tab2](https://github.com/Pianonic/Windows-VBS-and-BAT-Thing/blob/main/Screenshots/2%20(1).png?raw=true) 
 
 
 # Beta which does not work
