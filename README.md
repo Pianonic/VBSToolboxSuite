@@ -13,4 +13,5 @@
 
 ![Alt Text](https://raw.githubusercontent.com/Pianonic/Windows-VBS-and-BAT-Thing/main/Screenshots/1.gif) 
 
-** *Made by PianoNic* **
+
+*Made by PianoNic*
