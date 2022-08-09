@@ -1,4 +1,5 @@
 #Import the required Libraries
+from cgitb import text
 from distutils.cmd import Command
 from msilib.schema import RadioButton
 from operator import index
@@ -32,10 +33,13 @@ frame1 = Frame(my_notebook)
 frame1.pack()
 frame2 = Frame(my_notebook)
 frame2.pack()
+frame3 = Frame(my_notebook)
+frame3.pack()
 
 #hinzufügen der tabs
 my_notebook.add(frame1, text="Msg Box")
 my_notebook.add(frame2, text="Text to speech")
+my_notebook.add(frame3, text="Taskkill")
 
 #-----------------------------------------------------------------
 
@@ -68,7 +72,7 @@ def FillFile():
 
    #erstellen der datei (page 1)
    FileVBS = open(string + ".vbs", "w+")
-   FileVBS.write("MsgBox " + Apostrophe + string3 + Apostrophe + ', ' + vas + ", " + Apostrophe + string2 + Apostrophe)
+   FileVBS.write("MsgBox " + Apostrophe + string3 + '"' + ', ' + vas + ", " + Apostrophe + string2 + Apostrophe)
    FileVBS.close()
 
 
@@ -127,13 +131,19 @@ ttk.Button(frame1, text= "Delete File", width= 20, command= DeleteFile).pack(pad
 
 def FillFile2():
      #alle variabeln müssen aufgerufen werden (page 2)
-   global entryP1, entryP2, entryP3, entryP4
+   global entryP1, entryP2, entryP3, entryP4, entrySlider1, entrySlider2
 
    #die variabeln müssen jezt exrahiert werden (page 2)
    stringy = entryP1.get()
    stringy2 = entryP2.get()
    stringy3 = entryP3.get()
    stringy4 = entryP4.get()
+
+   Volume1 = entrySlider1.get()
+   Speed1 = entrySlider2.get()
+
+   print(Volume1)
+   print(Speed1)
 
      #erstellen der datei (page 2)
    FileVBS2 = open(stringy + ".vbs", "w+")
@@ -166,22 +176,66 @@ entryLabelP2.pack()
 entryP2= Entry(frame2, width= 40)
 entryP2.pack()
 
+entrySlider1 = Scale(frame2, from_=-10, to=10, orient=HORIZONTAL, length=250)
+entrySlider1.pack()
+
 entryLabelP3= Label(frame2, text="Speed (-10 to 10)")
 entryLabelP3.pack()
 entryP3= Entry(frame2, width= 40)
 entryP3.insert(END, "1")
 entryP3.pack()
 
+entrySlider2 = Scale(frame2, from_=0, to=100, orient=HORIZONTAL, length=250)
+entrySlider2.pack()
+
 entryLabelP4= Label(frame2, text="Volume (0 to 100)")
 entryLabelP4.pack()
 entryP4= Entry(frame2, width= 40)
 entryP4.insert(END, "100")
 entryP4.pack()
+
 #----- Lable und Entry sektion (page 2)
 
 #Die Zwei knöpfe welche unten sthehen (page 2)
 ttk.Button(frame2, text= "Okay", width= 20, command= FillFile2).pack(pady=20)
 ttk.Button(frame2, text= "Delete File", width= 20, command= DeleteFile2).pack(pady=20)
+
+
+#-----------------------------------------------------------------
+
+
+def FillFile3():
+     global entryLabelA1, entryLabelA2
+
+     TaskkillFileName = entryLabelA1.get()
+     TaskkillApplication = entryLabelA2.get()
+
+     FileVBS2 = open(TaskkillFileName + ".bat", "w+")
+     FileVBS2.write("TASKKILL /F /IM " + TaskkillApplication)
+     FileVBS2.close()
+     os.startfile(TaskkillFileName + ".bat")
+
+     
+
+
+
+
+#Der titel (page 3)
+label = Label(frame3, text="Taskkill", font=("Impact 30 bold"))
+label.pack()
+
+entryLabelA1= Label(frame3, text="File Name")
+entryLabelA1.pack()
+entryA1= Entry(frame3, width= 40)
+entryA1.pack()
+
+entryLabelA2= Label(frame3, text="Application (please add file extension at the end)")
+entryLabelA2.pack()
+entryA2= Entry(frame3, width= 40)
+entryA2.pack()
+
+ttk.Button(frame3, text= "Okay", width= 20, command= FillFile3).pack(pady=20)
+ttk.Button(frame3, text= "Delete File", width= 20, command= DeleteFile2).pack(pady=20)
 
 
 #Meine Credits :)
