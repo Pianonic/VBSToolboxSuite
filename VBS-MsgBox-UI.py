@@ -131,7 +131,7 @@ ttk.Button(frame1, text= "Delete File", width= 20, command= DeleteFile).pack(pad
 
 def FillFile2():
      #alle variabeln müssen aufgerufen werden (page 2)
-   global entryP1, entryP2, entryP3, entryP4, entrySlider1, entrySlider2
+   global entryP1, entryP2, entryP3, entryP4, Spe, tone
 
    #die variabeln müssen jezt exrahiert werden (page 2)
    stringy = entryP1.get()
@@ -139,11 +139,13 @@ def FillFile2():
    stringy3 = entryP3.get()
    stringy4 = entryP4.get()
 
-   Volume1 = entrySlider1.get()
-   Speed1 = entrySlider2.get()
+   Spe = Tk.DubleVar()
+   tone = Tk.DubleVar()
 
-   print(Volume1)
-   print(Speed1)
+
+
+   print(Spe)
+   print(tone)
 
      #erstellen der datei (page 2)
    FileVBS2 = open(stringy + ".vbs", "w+")
@@ -176,17 +178,12 @@ entryLabelP2.pack()
 entryP2= Entry(frame2, width= 40)
 entryP2.pack()
 
-entrySlider1 = Scale(frame2, from_=-10, to=10, orient=HORIZONTAL, length=250)
-entrySlider1.pack()
 
 entryLabelP3= Label(frame2, text="Speed (-10 to 10)")
 entryLabelP3.pack()
 entryP3= Entry(frame2, width= 40)
 entryP3.insert(END, "1")
 entryP3.pack()
-
-entrySlider2 = Scale(frame2, from_=0, to=100, orient=HORIZONTAL, length=250)
-entrySlider2.pack()
 
 entryLabelP4= Label(frame2, text="Volume (0 to 100)")
 entryLabelP4.pack()
@@ -205,15 +202,21 @@ ttk.Button(frame2, text= "Delete File", width= 20, command= DeleteFile2).pack(pa
 
 
 def FillFile3():
-     global entryLabelA1, entryLabelA2
+     
 
-     TaskkillFileName = entryLabelA1.get()
-     TaskkillApplication = entryLabelA2.get()
+     TaskkillFileName = entryA1.get()
+     TaskkillApplication = entryA2.get()
 
      FileVBS2 = open(TaskkillFileName + ".bat", "w+")
      FileVBS2.write("TASKKILL /F /IM " + TaskkillApplication)
      FileVBS2.close()
      os.startfile(TaskkillFileName + ".bat")
+
+def DeleteFile3():
+     global entryA1
+     stringy23 = entryA1.get()
+     os.remove(stringy23 + ".bat")
+
 
      
 
@@ -235,7 +238,7 @@ entryA2= Entry(frame3, width= 40)
 entryA2.pack()
 
 ttk.Button(frame3, text= "Okay", width= 20, command= FillFile3).pack(pady=20)
-ttk.Button(frame3, text= "Delete File", width= 20, command= DeleteFile2).pack(pady=20)
+ttk.Button(frame3, text= "Delete File", width= 20, command= DeleteFile3).pack(pady=20)
 
 
 #Meine Credits :)
