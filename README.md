@@ -22,7 +22,7 @@ Get the working version [here!](https://github.com/Pianonic/Windows-VBS-and-BAT-
 
 
 
-# Beta which does not work
+# Version 2
 includes Taskkill
 
 ![Alt Text](https://raw.githubusercontent.com/Pianonic/Windows-VBS-and-BAT-Thing/main/Screenshots/1.gif) 
