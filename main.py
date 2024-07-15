@@ -8,7 +8,7 @@ VARIATIONS = ["None", "Critical", "Question", "Exclamation", "Information", "Hel
 
 # Create the main window
 win = Tk()
-win.title("VBS-MsgBox-UI")
+win.title("VBS Toolbox Suite")
 win.geometry("500x600")
 
 # Create a notebook for tabbed interface
@@ -81,7 +81,7 @@ def hide_buttons(button_frame):
         widget.pack_forget()
 
 # Widgets setup for Msg Box tab
-label_filename = Label(frame1, text="VBS MsgBox UI", font=("Impact", 30, "bold"))
+label_filename = Label(frame1, text="VBS MsgBox", font=("Impact", 30, "bold"))
 label_filename.pack()
 
 entry_filename = Entry(frame1, width=40)
@@ -143,7 +143,7 @@ def hide_buttons_tts(button_frame):
         widget.pack_forget()
 
 # Widgets setup for Text to Speech tab
-label_tts = Label(frame2, text="VBS Speech to Text UI", font=("Impact", 30, "bold"))
+label_tts = Label(frame2, text="VBS Speech to Text", font=("Impact", 30, "bold"))
 label_tts.pack()
 
 entry_tts_filename = Entry(frame2, width=40)

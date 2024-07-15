@@ -1,4 +1,4 @@
-# VBS-MsgBox-UI 📦
+# VBS Toolbox Suite 📦
 
 A graphical user interface using Tkinter for generating VBS (Visual Basic Script) files for message boxes, text-to-speech, and taskkill operations.
 
