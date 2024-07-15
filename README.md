@@ -1,31 +1,39 @@
-# Windows-VBS-and-BAT-Thing
+# VBS-MsgBox-UI 📦
 
-*With this programme you can create files to prank your friends or let it read a text for you!*
+A graphical user interface using Tkinter for generating VBS (Visual Basic Script) files for message boxes, text-to-speech, and taskkill operations.
 
-**How to use it?**
-1. write out a file name
-2. fill in the other content
-3. have fun!
+## Features
+- **Msg Box Tab**: Generate VBS script for displaying message boxes with various types.
+- **Text to Speech Tab**: Generate VBS script for converting text to speech.
+- **Taskkill Tab**: Generate batch script to kill specific applications.
 
-**Here is an example of one possibility**
+## Requirements
+- Python 3.7 or higher
+- Install dependencies using `pip install -r requirements.txt`
 
+## Usage
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Pianonic/DirectoryToJSON.git
+   cd VBS-MsgBox-UI
+   ```
+
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. Run the application:
+   ```bash
+   python main.py
+   ```
+
+## Screenshots
 ![Error](https://user-images.githubusercontent.com/79938743/183609552-a80d7ead-a441-4c40-bd8f-f8b4ae940b25.png) 
 
-Get the working version [here!](https://github.com/Pianonic/Windows-VBS-and-BAT-Thing/releases/tag/VBS)
+## License
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-# Screenshots of Releases
+---
 
-![Picture of Tab1](https://github.com/Pianonic/Windows-VBS-and-BAT-Thing/blob/main/Screenshots/1%20(1).png?raw=true)
-
-
-![Picture of Tab2](https://github.com/Pianonic/Windows-VBS-and-BAT-Thing/blob/main/Screenshots/2%20(1).png?raw=true) 
-
-
-
-# Version 2
-includes Taskkill
-
-![Alt Text](https://raw.githubusercontent.com/Pianonic/Windows-VBS-and-BAT-Thing/main/Screenshots/1.gif) 
-
-
-*Made by PianoNic*
+Made with ❤️ by [PianoNic](https://github.com/Pianonic)
