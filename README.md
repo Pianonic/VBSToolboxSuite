@@ -35,5 +35,4 @@ A graphical user interface using Tkinter for generating VBS (Visual Basic Script
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 ---
-
 Made with ❤️ by [PianoNic](https://github.com/Pianonic)
